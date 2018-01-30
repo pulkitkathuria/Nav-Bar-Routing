@@ -1,13 +1,13 @@
 $(function () {
-    let print = $('#hello')
-    let info1 = $('#one')
-    let info2 = $('#two')
-    let info3 = $('#three')
-    let info4 = $('#four')
+    var print = $('#hello')
+    var info1 = $('#one')
+    var info2 = $('#two')
+    var info3 = $('#three')
+    var info4 = $('#four')
 
     info1.click(function () {
         $.get('/r1',function (data) {
-            let pq = data;
+            var pq = data;
 
             print.empty();
             print.append("<p>"+pq+"</p>")
